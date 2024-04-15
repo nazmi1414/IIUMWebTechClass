@@ -1,0 +1,40 @@
+html {
+  background: url(bob.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+h1{
+  align-content: 'center';
+  background-color: rgba(195, 91, 206, 0.55);
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(195, 91, 206, 0.55);
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-right: 2px solid white;
+}
+li a:hover{
+  background-color: #B0BAB7 ;
+}
+.active{
+  background-color: #21AF00;
+}
+li:last-child {
+  border-right: none;
+  border-left: 2px solid white;
+}
+fieldset{
+    background-color: rgba(63,191,127,0.4);
+}

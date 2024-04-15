@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Market</title>
+  </head>
+  <style media="screen">
+    h1{
+      background-color:darkblue;
+    }
+    h2{
+      border:2px dashed red;
+      font-color:darkblue;
+      color:darkblue;
+    }
+    table{
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+    }
+    td, th {
+        border: 2px solid rgb(190,190,190);
+        padding: 10px 20px;
+    }
+    input:invalid {
+      border: 2px dashed red;
+    }
+
+    input:valid {
+      border: 2px solid blue;
+    }
+  </style>
+
+  <body>
+<fieldset>
+
+    <h1 align="center" ><font color="white">Online Market</font></h1>
+    <p><a href="#">Home</a> <a href="#">Contact</a></p>
+
+
+
+      <h2 align="center">New Product Details</h2>
+
+<br>
+    <table>
+      <tr>
+        <td rowspan="4">Product</td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>x2</td>
+        <td>x3</td>
+        <td>x4</td>
+        <td>x5</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>3.00</td>
+        <td>5.00</td>
+        <td>7.00</td>
+        <td>9.00</td>
+      </tr>
+      <tr>
+        <td>Quantity</td>
+        <td>5</td>
+        <td>6</td>
+        <td>12</td>
+        <td>17</td>
+      </tr>
+
+    </table>
+    <br>
+
+    <form class="" action="index.html" method="post">
+      <fieldset>
+
+      <label for="">choose a date</label>
+      <input type="date" name="" value=""required>
+    <br></br>
+      <label for="">choose number between 1 and 50:</label>
+      <input type="number" max="50" min="1"required>
+      <br></br>
+    <fieldset>
+
+    <legend class="">What is your favourite subject?</legend>
+    <input type="radio" checked id="Math" name="meal" value="">
+    <label for="">Math</label>
+
+    <input type="radio" name="meal" value="">
+    <label for="">Science</label>
+
+    <input type="radio" name="meal" value="">
+    <label for="">Biology</label>
+
+    <br><br><br>
+    </fieldset>
+    <br><br><br>
+
+    <select class="" name="">
+      <option value=""selected>Study level</option>
+      <option value="">Undergraduate</option>
+      <option value="">Postgraduate</option>
+
+    </select>
+    <br><br>
+
+    <button type="button" name="button">Submit</button>
+
+    <button type="button" name="button">Reset</button>
+
+    </fieldset>
+
+    </form>
+</fieldset>
+  </body>
+</html>
