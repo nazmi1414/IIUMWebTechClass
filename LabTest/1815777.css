@@ -1,0 +1,46 @@
+body{
+  font-family: serif;
+  width: 80%;
+  margin: auto;
+}
+
+legend{
+  border: 0.5px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+fieldset{
+  border: 0.5px solid black;
+}
+
+.OrderButton{
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: 0.5px solid black;
+  background-color: none;
+}
+
+.addButton{
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: 0.5px solid black;
+  background-color: none;
+}
+
+table{
+  width: 100%;
+}
+
+.FoodContent{
+  width: 600px;
+  height: 100px;
+}

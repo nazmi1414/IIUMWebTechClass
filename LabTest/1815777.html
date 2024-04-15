@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="1815777.css">
+    <script src="1815777.js"></script>
+  </head>
+  <body>
+    <h1 align="Center">Restoran Rabiha</h1>
+    <br>
+    <h3 align="Center">Table 15</h3>
+
+    <fieldset>
+      <legend>Menu</legend>
+
+      <table>
+        <tr>
+      <table>
+        <tr>
+          <td><img src="nasi.jpg" alt="nasi" width="500px"></td>
+          <td><fieldset>
+            <p>Nasi Goreng Kampung Ala Thai</p><p>RM10.00</p>
+            <table class="FoodContent">
+              <tr>
+                <td>Quantity</td>
+                <td><input id="NGKAT" type="number" name="" value="" min="0"></td>
+                <td id="PriceNGKAT"></td>
+              </tr>
+              <tr>
+                <td>Add-On Hard Boiled Egg</td>
+                <td><input id="NGKAT_HBE" type="number" name="" value="" min="0"></td>
+                <td id="PriceNGKAT_HBE"></td>
+              </tr>
+            </table>
+            <button type="button" name="button" class="addButton" onclick="NGKAT_Function()"><p id="NGKAT">ADD</p></button>
+          </fieldset></td>
+        </tr>
+      </table>
+      </tr>
+
+      <tr>
+      <table>
+        <tr>
+          <td><img src="tomyum.jpg" alt="nasi" width="500px"></td>
+          <td><fieldset>
+            <p>Prawn Tom Yum Soup</p><p>RM15.00</p>
+            <table class="FoodContent">
+              <tr>
+                <td>Quantity</td>
+                <td><input id="PTYS" type="number" name="" value="" min="0"></td>
+                <td id="PricePTYS"></td>
+              </tr>
+            </table>
+            <button type="button" name="button" class="addButton" onclick="PTYS_Function()"><p>ADD</p></button>
+          </fieldset></td>
+        </tr>
+      </table>
+      </tr>
+      </table>
+  <button type="button" name="button" class="OrderButton" onclick="Bill()"><p>PLACE ORDER</p></button>
+
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Your Bill</legend>
+      <table>
+        <tr>
+          <td class="ResultFood"></td>
+          <td class="ResultPrice"></td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td id="Total"></td>
+        </tr>
+        <tr>
+          <td>SST (6%)</td>
+          <td id="SST_Amount"></td>
+        </tr>
+        <tr>
+          <td>GRAND TOTAL</td>
+          <td id="Grand_Total"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>
