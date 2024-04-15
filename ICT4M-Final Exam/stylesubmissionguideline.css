@@ -1,0 +1,121 @@
+.headerPic {
+    position: relative;
+    top: 0px;
+  }
+
+  body {
+    background: url(background.jpg);
+    background-repeat: repeat;
+    font-family: "Arial";
+    font: Arial;
+  }
+
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 70%;
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.right-content-box {
+  width: 70%;
+  float:right;
+  align-content: center;
+  padding-bottom: 65px;
+}
+
+.submissionguidelines{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    padding: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 30px;
+  background-color: #dddddd;
+}
+ul{
+  margin: 0;
+  padding-left: 17px;
+}
+.red{
+  text-decoration: none;
+  color: red;
+}
+.green{
+  color: green;
+}
+
+.footer {
+   position: absolute;
+   top: 1300px ;
+   width: 99%;
+   height: 65px;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: white;
+   text-align: right;
+}

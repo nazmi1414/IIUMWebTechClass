@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>ICT4M Registration</title>
+  </head>
+  <link rel="stylesheet" href="styling.css">
+  <style media="screen">
+    .sub{
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
+  <body>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+      <div class="fotorama" data-autoplay="true">
+      <img src="header ict4m.png">
+      <img src="header2.png">
+      <img src="header3.png">
+    </div>
+
+    <div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Submission
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="callforpaper.html">Call for Papers</a>
+      <a href="importantDate.html">Important Dates</a>
+      <a href="submissionguideline.html">Submission Guidelines</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Program
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="conference.html">Conference Programs</a>
+      <a href="parallel.html">Parallel Session</a>
+      <a href="speakers.html">Keynotes Speakers</a>
+    </div>
+  </div>
+  <a href="registration.html">Fees & Registration</a>
+  <a href="contact.html">Contact & Location</a>
+</div>
+
+<div class="left-box-content">
+  <h1 class="green" align = "center">ICT4M 2020</h1>
+  <h2 align="center">International Participant</h2>
+
+  <table>
+  <tr>
+    <th>Type of registration</th>
+    <th colspan="2">Rate</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Early bird<br>(20% Discount)</td>
+    <td> Regular rate</td>
+  </tr>
+  <tr>
+    <td>Conference Paper Presenter</td>
+    <td>RM 1,600/<br>USD 400</td>
+    <td>RM 2,000/<br>USD 500</td>
+  </tr>
+  <tr>
+    <td>Student Presenter</td>
+    <td>RM 1,280/<br>USD 320</td>
+    <td>RM 1,600/<br>USD 400</td>
+  </tr>
+  <tr>
+    <td>Participant(without papers)</td>
+    <td colspan="2">RM 700/USD 175</td>
+  </tr>
+  </table>
+
+    <p style="line-height:10px;margin:0px;"><br></p>
+  <h2 align="center">Local Participant</h2>
+  <table>
+    <tr>
+      <th>Type of registration</th>
+      <th colspan="2">Rate</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Early bird<br>(20% Discount)</td>
+      <td>Regular Rate</td>
+    </tr>
+    <tr>
+      <td>Conference Paper Presenter</td>
+      <td>RM 1,200</td>
+      <td>RM 1,500</td>
+    </tr>
+    <tr>
+      <td>Student Presenter</td>
+      <td>RM 800</td>
+      <td>RM 1,000</td>
+    </tr>
+    <tr>
+      <td>Participant(without papers)</td>
+      <td colspan="2">RM 600</td>
+    </tr>
+  </table>
+    <p style="line-height:10px;margin:0px;"><br></p>
+
+  <ul>
+    <h3 class="red">Note:</h3>
+    <li>Additional papers from the same presenter will be charged RM500 per paper/ USD125 (up to 2 papers only).</li>
+      <p style="line-height:10px;margin:0px;"><br></p>
+    <li>A student presenter must provide proof of student status, such as student identification during refistration.</li>
+      <p style="line-height:10px;margin:0px;"><br></p>
+    <li>Conference registration includes access to all parallel sessions, invited speakers, meals, conference kit and a copy of the conference proceedings.</li>
+  </ul>
+</div>
+
+<div class = "right-content-box_reg_outer"><br>
+      <form class="" action="RegComplete.html" method="get">
+  <fieldset>
+    <legend><h2 class="red">Econference - Registration</h2></legend>
+    <table>
+      <tr>
+        <td>Event Name</td>
+        <td><p>International Conference on Information & Communication Technology for The Muslim World (ICT4M2020)</p></td>
+      </tr>
+      <tr>
+        <td>Rate<font color="red">*</font></td>
+        <td><select name="Rate" id="rate" onchange="calFunction()" required>
+          <option value="">-select-</option>
+          <option value="600">Local Participant W/out Paper</option>
+          <option value="700">Intl. Participant W/out Paper</option>
+          <option value="2000">Presenter (International)</option>
+          <option value="1500">Presenter (Local)</option>
+          <option value="1000">Student (Presenter)</option>
+          <option value="0">Exhibition</option>
+          <option value="1600">Intl. Student (Presenter)</option>
+          <option value="0">Full-day Workshop (Non-Student)</option>
+          <option value="0">Mini Workshop (Non-Student)</option>
+          <option value="1100">Presenter (additional 1 paper)</option>
+          <option value="1600">Presenter (additional 2 papers)</option>
+          <option value="0">Mini Workshop (Student)</option>
+          <option value="0">Full-day Workshop (Student)</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>Participant<font color="red">*</font></td>
+          <td> <input type="text" name="Full name" placeholder="Full name" style="height:20px;" size="23" required>
+            <input type="text" name="Designation" placeholder="Designation" style="height:20px;" size="23" required></td>
+      </tr>
+      <tr>
+        <td>Amount (excl. GST)</td>
+        <td><div id="amtnogst">
+
+        </div> </td>
+      </tr>
+      <tr>
+        <td>GST Amount</td>
+        <td><div id="amtgst">
+
+        </div> </td>
+      </tr>
+      <tr>
+        <td>Total Amount (incl. GST)</td>
+        <td><div id="amtwgst">
+
+        </div> </td>
+      </tr>
+      <tr>
+        <td>Organization<font color="red">*</font></td>
+        <td><input type="text" name="Organization" style="height:20px;" size="23" required></td>
+      </tr>
+      <tr>
+        <td>Contact No<font color="red">*</font></td>
+        <td>
+        <input type="tel" name="contact No" placeholder="Ex: 01299999999 / 039999999" style="height:20px;" size="23" required></td>
+      </tr>
+      <tr>
+        <td>Fax No</td>
+        <td>
+        <input type="Fax" name="fax No" placeholder="Ex: 01299999999 / 039999999" style="height:20px;" size="23"></td>
+      </tr>
+      <tr>
+        <td>Email<font color="red">*</font></td>
+        <td><input type="email" name="email" placeholder="Ex: name@gmail.com" style="height:20px;" size="23" required></td>
+      </tr>
+      <tr>
+        <td>Payment<font color="red">*</font></td>
+        <td>  <select name="Payment" required>
+            <option value="1">Credit card</option>
+            <option value="2">Debit card</option>
+            <option value="3">Online banking</option>
+          </select>
+        </td>
+      </tr>
+    </table><br>
+    <p align="center">
+    <label for="Submit"></label>
+    <button type="submit" class="sub">Submit</button></p>
+      </fieldset>
+      </form>
+  </div>
+
+  <div class="footer_reg">
+  <img align="left" src="IIUM_Logo.png" alt="" height="60px" width="230px">
+  <p align="center">Copyright © ICT4M . All rights reserved. Any inquiries please email our secretariat at ict4m@iium.edu.my or call +603-6196 6406</p>
+  </div>
+  <script>
+function calFunction() {
+  var x = parseInt(document.getElementById("rate").value);
+
+  document.getElementById("amtnogst").innerHTML = "RM" + x;
+  document.getElementById("amtgst").innerHTML = "RM" + x * 0.06;
+  document.getElementById("amtwgst").innerHTML = "RM" + (x + x * 0.06);
+
+}
+</script>
+  </body>
+</html>
